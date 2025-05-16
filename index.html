@@ -1,10 +1,696 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Welcome to Embodied Web Agent</title>
-</head>
-<body>
-  <h1>Welcome to Embodied Web Agent</h1>
-  <p>Welcome to Embodied Web Agent.</p>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta name="description" content="Embodied Web Agents" />
+    <meta property="og:title" content="Embodied Web Agents" />
+    <meta property="og:description" content="Embodied Web Agents" />
+    <meta property="og:url" content="URL OF THE WEBSITE" />
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <meta property="og:image" content="static/imgs/teaser.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:title" content="Embodied Web Agents" />
+    <meta name="twitter:description" content="Embodied Web Agents" />
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <meta name="twitter:image" content="static/imgs/teaser.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- Keywords for your paper to be indexed by-->
+    <meta name="keywords" content="Embodied Web Agents" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>
+      Embodied Web Agents: Bridging Physical-Digital Realms for Integrated Agent
+      Intelligence
+    </title>
+    <link rel="icon" type="image/x-icon" href="static/imgs/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="static/css/bulma.min.css" />
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css" />
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css" />
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+    />
+    <link rel="stylesheet" href="static/css/index.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+
+    <style>
+      .small-caps {
+        font-variant: small-caps;
+        letter-spacing: 0.05em;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">
+                <!-- <img
+                  src="static/imgs/favicon.ico"
+                  alt="favicon"
+                  width="52"
+                /> -->
+                <span class="small-caps" style="color: rgb(41, 62, 111)"
+                  >Embodied Web Agents:</span
+                >
+              </h1>
+              <h2 class="subtitle is-3 publication-subtitle">
+                Bridging Physical-Digital Realms for Integrated Agent
+                Intelligence
+              </h2>
+              <div class="is-size-5 publication-authors">
+                <!-- Paper authors -->
+                <span class="author-block">
+                  <a href="https://evelinehong.github.io" target="_blank"
+                    >Yining Hong*</a
+                  ><span style="color: rgb(43, 118, 71)"><sup> 1</sup></span
+                  >,</span
+                >
+                <span class="author-block">
+                  <a href="https://threesr.github.io" target="_blank"
+                    >Rui Sun*</a
+                  ><span style="color: rgb(43, 118, 71)"><sup> 1</sup></span
+                  >,</span
+                >
+                <span class="author-block">
+                  <a href="https://bingxuanli.com" target="_blank"
+                    >Bingxuan Li</a
+                  ><span style="color: rgb(43, 118, 71)"><sup> 1</sup></span
+                  >,</span
+                >
+                <span class="author-block">
+                  <a href="https://web.cs.ucla.edu/~sxyao/" target="_blank"
+                    >Xingchen Yao</a
+                  ><span style="color: rgb(43, 118, 71)"><sup>1</sup></span
+                  >,
+                </span>
+                <span class="author-block">
+                  <a href="https://maxinewu5.github.io" target="_blank"
+                    >Maxine Wu</a
+                  ><span style="color: rgb(43, 118, 71)"><sup>1</sup></span
+                  >,
+                </span>
+                <span class="author-block">
+                  <a href="https://alchien22.github.io" target="_blank"
+                    >Alexander Chien</a
+                  ><span style="color: rgb(43, 118, 71)"><sup>1</sup></span
+                  >,
+                </span>
+                <span class="author-block">
+                  <a href="https://wadeyin9712.github.io" target="_blank"
+                    >Da Yin</a
+                  ><span style="color: rgb(43, 118, 71)"><sup>1</sup></span
+                  >,
+                </span>
+                <span class="author-block">
+                  <a href="http://www.stat.ucla.edu/~ywu/" target="_blank"
+                    >Ying Nian Wu</a
+                  ><span style="color: rgb(43, 118, 71)"><sup>1</sup></span
+                  >,
+                </span>
+                <span class="author-block">
+                  <a href="https://www.zhecanwang.com" target="_blank"
+                    >Zhecan James Wang</a
+                  ><span style="color: rgb(43, 118, 71)"><sup>1</sup></span
+                  >,
+                </span>
+                <span class="author-block">
+                  <a href="https://web.cs.ucla.edu/~kwchang/" target="_blank"
+                    >Kai-Wei Chang</a
+                  ><span style="color: rgb(43, 118, 71)"
+                    ><sup> 1</sup></span
+                  ></span
+                >
+              </div>
+
+              <div class="is-size-5 publication-authors">
+                <!-- <span class="author-block"
+                  >Institution Name<br />Conferance name and year</span
+                > -->
+                <span class="author-block"
+                  ><span style="color: rgb(43, 118, 71)"><sup>1</sup></span
+                  >University of California, Los Angeles
+                </span>
+                <span class="eql-cntrb"
+                  ><small
+                    ><br /><sup>*</sup>Indicates Equal Contribution</small
+                  ></span
+                >
+              </div>
+
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <!-- ArXiv abstract Link -->
+                  <!-- <span class="link-block">
+                    <a
+                      href=""
+                      target="_blank"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+                    </a>
+                  </span> -->
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a
+                      href="https://github.com/Embodied-Web-Agent/Embodied-Web-Agent"
+                      target="_blank"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
+                  </span>
+
+                  <!-- Huggingface Dataset link -->
+                  <span class="link-block">
+                    <a
+                      href="#"
+                      onclick="showDatasetPopup(event)"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fas fa-database"></i>
+                      </span>
+                      <span>Datasets</span>
+                    </a>
+                  </span>
+
+                  <!-- Dataset popup -->
+                  <div id="dataset-popup" class="modal">
+                    <div class="modal-background"></div>
+                    <div class="modal-content">
+                      <div class="box">
+                        <h3 class="title is-4">Datasets</h3>
+                        <div class="content">
+                          <ul style="list-style-type: none; padding: 0">
+                            <li>
+                              <a
+                                href="https://huggingface.co/datasets/evelynhong/embodied_web_agent_web_env"
+                                target="_blank"
+                                class="button is-dark is-outlined is-fullwidth mb-2"
+                                ><span class="icon"
+                                  ><i class="fas fa-globe"></i
+                                ></span>
+                                <span>Web Environment</span></a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://huggingface.co/datasets/evelynhong/embodied_web_agent_outdoor_annotation"
+                                target="_blank"
+                                class="button is-dark is-outlined is-fullwidth mb-2"
+                                ><span class="icon"
+                                  ><i class="fas fa-map-marker-alt"></i
+                                ></span>
+                                <span>Outdoor Annotation Dataset</span></a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://huggingface.co/datasets/evelynhong/embodied-web-agent-indoor"
+                                target="_blank"
+                                class="button is-dark is-outlined is-fullwidth mb-2"
+                                ><span class="icon"
+                                  ><i class="fas fa-home"></i
+                                ></span>
+                                <span>Indoor Dataset</span></a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://huggingface.co/datasets/evelynhong/embodied_web_agent_outdoor_env"
+                                target="_blank"
+                                class="button is-dark is-outlined is-fullwidth mb-2"
+                                ><span class="icon"
+                                  ><i class="fas fa-mountain"></i
+                                ></span>
+                                <span>Outdoor Environment Dataset</span></a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://huggingface.co/datasets/evelynhong/embodied_web_agent_outdoor_trajectory"
+                                target="_blank"
+                                class="button is-dark is-outlined is-fullwidth mb-2"
+                                ><span class="icon"
+                                  ><i class="fas fa-route"></i
+                                ></span>
+                                <span>Outdoor Trajectory Dataset</span></a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://huggingface.co/datasets/evelynhong/embodied-web-agent-geoguessr"
+                                target="_blank"
+                                class="button is-dark is-outlined is-fullwidth mb-2"
+                                ><span class="icon"
+                                  ><i class="fas fa-map"></i
+                                ></span>
+                                <span>GeoGuessr Dataset</span></a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <button
+                      class="modal-close is-large"
+                      aria-label="close"
+                      onclick="closeDatasetPopup()"
+                    ></button>
+                  </div>
+
+                  <script>
+                    function showDatasetPopup(e) {
+                      e.preventDefault();
+                      document
+                        .getElementById("dataset-popup")
+                        .classList.add("is-active");
+                    }
+
+                    function closeDatasetPopup() {
+                      document
+                        .getElementById("dataset-popup")
+                        .classList.remove("is-active");
+                    }
+
+                    // Close modal when clicking outside
+                    document
+                      .querySelector(".modal-background")
+                      .addEventListener("click", closeDatasetPopup);
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Teaser -->
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div
+          class="hero-body"
+          style="display: flex; flex-direction: column; align-items: center"
+        >
+          <img src="static/imgs/teaser.png" alt="Teaser" width="90%" />
+          <br />
+          <h2 class="subtitle has-text-centered">
+            Illustrative examples of our
+            <span class="small-caps" style="color: rgb(41, 62, 111)"
+              ><b>Embodied Web Agents</b></span
+            >
+            conceptual paradigm, tasks and environments.
+          </h2>
+          <h3 class="subtitle has-text-centered">
+            <span style="color: rgb(40, 158, 222)">Blue boxes and arrows</span>
+            indicate web interaction / switching to the web respectively.
+            <span style="color: rgb(232, 165, 21)"
+              >Orange boxes and arrows</span
+            >
+            indicate acting in / switching to the embodied environment. We omit
+            most intermediate actions due to the large number of interaction
+            steps.
+          </h3>
+        </div>
+      </div>
+    </section>
+    <!-- End teaser -->
+
+    <!-- Paper abstract -->
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-11">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p class="is-size-5">
+                AI agents today are mostly siloed — they either retrieve and
+                reason over vast amount of digital information and knowledge
+                obtained online; or interact with the physical world through
+                embodied perception, planning and action — but rarely both. This
+                separation limits their ability to solve tasks that require
+                integrated physical and digital intelligence, such as cooking
+                from online recipes, navigating with dynamic map data, or
+                interpreting real-world landmarks using web knowledge. We
+                introduce
+                <span class="small-caps" style="color: rgb(41, 62, 111)"
+                  ><b>Embodied Web Agents</b></span
+                >, a novel paradigm for AI agents that fluidly bridge embodiment
+                and web-scale reasoning. To operationalize this concept, we
+                first develop the EMBODIED WEB AGENTS task environments, a
+                unified simulation platform that tightly integrates realistic 3D
+                indoor and outdoor environments with functional web interfaces.
+                Building upon this platform, we construct and release the
+                EMBODIED WEB AGENTS Benchmark, which encompasses a diverse suite
+                of tasks including cooking, navigation, shopping, tourism, and
+                geolocation — all requiring coordinated reasoning across
+                physical and digital realms for systematic assessment of
+                cross-domain intelligence. Experimental results reveal
+                significant performance gaps between state-of-the-art AI systems
+                and human capabilities, establishing both challenges and
+                opportunities at the intersection of embodied cognition and
+                web-scale knowledge access.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End paper abstract -->
+
+    <!-- Paper Method -->
+    <section class="section hero">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-11">
+            <h2 class="title is-3">
+              <span class="small-caps" style="color: rgb(41, 62, 111)"
+                ><b>Embodied Web Agents</b></span
+              >
+            </h2>
+
+            <p>
+              We introduce
+              <span class="small-caps" style="color: rgb(41, 62, 111)"
+                ><b>Embodied Web Agents</b></span
+              >
+              as a new conceptual paradigm of AI systems that unify physical
+              embodiment with web-scale knowledge access — capable of perceiving
+              and acting in the real world while reasoning over dynamic,
+              unstructured information from the web.
+            </p>
+
+            <h4 class="title is-5"><br />Task Environments</h4>
+
+            <p>
+              To operationalize this concept, we first develop the
+              <span class="small-caps" style="color: rgb(41, 62, 111)"
+                ><b>Embodied Web Agents</b></span
+              >
+              task environments, a unified simulation platform that integrates
+              realistic 3D environments with interactive web interfaces. This
+              platform combines (1) indoor settings from AI2-THOR, (2) outdoor
+              navigation in Google Earth, and (3) web interfaces including
+              Wikipedia, online stores, recipe websites, map services
+              \textit{etc.}, enabling agents to interact seamlessly with both
+              physical and digital spaces.
+            </p>
+
+            <h4 class="title is-5"><br />Benchmark</h4>
+
+            <p>
+              We construct the
+              <span class="small-caps" style="color: rgb(41, 62, 111)"
+                ><b>Embodied Web Agents</b></span
+              >
+              Benchmark, which encompasses approximately 1.5k tasks across
+              multiple domains, including: (1) cooking tasks where agents match
+              physical ingredients with online recipes; (2) navigation combining
+              online maps with physical wayfinding; (3) shopping requiring
+              coordination between in-store actions and online options; (4)
+              tourism connecting physical landmarks with web information; and
+              (5) geolocation determining position through embodied exploration
+              and online research. Together, these tasks systematically test an
+              agent's ability to bridge embodied perception, action, and
+              web-based reasoning across varied contexts.
+            </p>
+
+            <h4 class="title is-5"><br />Example</h4>
+
+            <div class="content has-text-justified">
+              <img src="static/imgs/example.png" alt="example" width="100%" />
+              <br />
+              <p>
+                An Exemplar Pipeline of completing a task in our
+                <span class="small-caps" style="color: rgb(41, 62, 111)"
+                  ><b>Embodied Web Agents</b></span
+                >
+                dataset.
+                <span style="color: rgb(40, 158, 222)">Blue boxes</span>
+                indicate web interaction.
+                <span style="color: rgb(232, 165, 21)">Orange boxes</span>
+                indicate embodied interaction. Boxes with gradient colors
+                indicate switching from one environment to the other.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End paper method -->
+
+    <!-- Image carousel -->
+    <section class="hero is-light">
+      <div class="hero-body">
+        <div class="columns is-centered has-text-centered">
+          <h2 class="title is-3">Experiments and Results</h2>
+        </div>
+        <div class="container">
+          <div id="results-carousel" class="carousel results-carousel">
+            <div class="item">
+              <img
+                src="static/imgs/res_outdoor.png"
+                alt="main_result"
+                width="60%"
+                style="
+                  display: block;
+                  margin-left: auto;
+                  margin-right: auto;
+                  border-radius: 15px;
+                  border: 2px solid;
+                "
+              />
+              <h2
+                class="subtitle has-text-centered"
+                style="max-width: 90%; margin: 0 auto"
+              >
+                <br />
+                <b>[1/3] Outdoor Experiment</b>
+              </h2>
+              <h2 class="subtitle" style="max-width: 90%; margin: 0 auto">
+                <br />
+                For outdoor planning, we use GPT-4o-mini alongside Gemini 2.0
+                Flash, Qwen-VL-Plus, and InternVL2.5-latest to evaluate
+                performance across navigation, shopping, and traveling tasks.
+                For web observation, we follow the setting of VisualWebArena.
+                <br /><br />
+                We observe that:
+                <br /><br />
+                <i>1)</i> GPT-4o-mini consistently leads across all metrics,
+                with the highest accuracy in navigation (34.72%), shopping
+                (25.46%), and traveling (30.91%), though still well below human
+                performance. Gemini follows closely behind, while Qwen and
+                Intern lag behind.
+                <br />
+                <i>2)</i> Web-only accuracy exceeds embodied-only accuracy for
+                all outdoor tasks, suggesting models handle digital information
+                more effectively than physical navigation.
+                <br />
+                <i>3)</i> Generally, completion rates are satisfactory, while
+                overall accuracies are very low across all tasks. This indicates
+                models can execute parts of complex tasks but struggle with
+                consistent cross-domain reasoning over longer sequences.
+                <br />
+                <i>4)</i> From task perspective, shopping and traveling involve
+                richer interactions between the embodied environment and the web
+                than navigation, and each task spans longer steps. As a result,
+                the overall accuracy for shopping and traveling is noticeably
+                lower than for navigation. This highlights the difficulty of
+                cross-environment tasks, particularly those that are lengthy and
+                involve multiple steps, for current models.
+              </h2>
+              <br />
+            </div>
+
+            <div class="item">
+              <img
+                src="static/imgs/res_cooking.png"
+                alt="main_result"
+                width="80%"
+                style="
+                  display: block;
+                  margin-left: auto;
+                  margin-right: auto;
+                  border-radius: 15px;
+                  border: 2px solid;
+                "
+              />
+              <h2
+                class="subtitle has-text-centered"
+                style="max-width: 90%; margin: 0 auto"
+              >
+                <br />
+                <b>[2/3] Cooking Experiment</b>
+              </h2>
+              <h2 class="subtitle" style="max-width: 90%; margin: 0 auto">
+                <br />
+                For indoor cooking, we implement two distinct approaches:
+                vision-based and text-based.
+                <br /><br />
+                A substantial performance gap exists between AI models and
+                humans, with the best model (text-based GPT-4o) achieving only
+                6.4% overall accuracy compared to humans' 77.08%.
+                <br /><br />
+                Text-based models using structured scene graphs consistently
+                outperform their vision-based counterparts using first-person
+                views, suggesting current models struggle to ground visual
+                observations effectively in cooking contexts.
+                <br /><br />
+                GPT-4o and Gemini-2.0-Flash demonstrate substantially stronger
+                performance than Qwen-VL-Plus/Qwen-PLUS and InternVL/InternLM
+                across both modalities.
+              </h2>
+              <br />
+            </div>
+
+            <div class="item">
+              <img
+                src="static/imgs/res_geo.png"
+                alt="geo_result"
+                width="60%"
+                style="
+                  display: block;
+                  margin-left: auto;
+                  margin-right: auto;
+                  border-radius: 15px;
+                  border: 2px solid;
+                "
+              />
+              <h2
+                class="subtitle has-text-centered"
+                style="max-width: 90%; margin: 0 auto"
+              >
+                <br />
+                <b>[3/3] Geolocation Experiment</b>
+              </h2>
+              <h2 class="subtitle" style="max-width: 80%; margin: 0 auto">
+                <br />
+                For geolocation tasks, we benchmark against FairLocator, a study
+                analyzing VLM performance on GeoGuessr using Google Street View
+                images.
+                <br /><br />
+                As shown in Table, our agent, capable of active exploration and
+                web information access, significantly outperforms the passive
+                baseline, particularly in identifying finer-grained locations
+                like cities and streets.
+                <br /><br />
+                This substantial improvement underscores the potential of
+                integrating embodied and web domains to enhance performance
+                across numerous real-world tasks, warranting further
+                investigation.
+              </h2>
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hero">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-11">
+            <h2 class="title is-3">Error Analysis</h2>
+            <div
+              class="content has-text-justified"
+              style="display: flex; flex-direction: column; align-items: center"
+            >
+              <img
+                src="static/imgs/error_analysis.png"
+                alt="error_analysis"
+                width="80%"
+                style="
+                  border-radius: 20px;
+                  border: 2px solid;
+                  padding: 10px;
+                  margin-bottom: 20px;
+                "
+              />
+              <br />
+              <br />
+              <p class="is-size-5">
+                This figure presents a detailed breakdown of error types and
+                their percentages that contribute to task failures in cooking
+                tasks when using GPT-4o. Our analysis reveals that the primary
+                challenges in embodied web agents lie not in isolated
+                capabilities, but in their integration.
+                <b
+                  >The most prevalent failure pattern involves agents becoming
+                  trapped in single-domain cycles.</b
+                >
+                While embodied errors (14.6%) and web errors (8.0%) occur,
+                cross-domain errors (66.6%) overwhelmingly dominate the failure
+                landscape — confirming that the critical bottleneck emerges at
+                the intersection where physical and digital domains meet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--BibTex citation -->
+    <!-- <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>coming soon</code></pre>
+      </div>
+    </section> -->
+    <!--End BibTex citation -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content">
+              <p>
+                This page was built from inspiration of the
+                <a
+                  href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                  target="_blank"
+                  >Academic Project Page Template</a
+                >
+                which was adopted from the
+                <a href="https://nerfies.github.io" target="_blank">Nerfies</a>
+                project page.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Statcounter tracking code -->
+
+    <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+  </body>
 </html>
